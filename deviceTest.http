@@ -1,19 +1,28 @@
 GET  http://localhost:3000/devices
 
 ###
+GET http://localhost:3000/devices/num_products
+
+###
+
+
+###
 POST http://localhost:3000/devices/
 Content-Type: application/json
 
 {  
-    "name": "iPadPro", 
-    "category": "Tablet",
-    "manufacturer": "Apple", 
-    "price": 900 
+    "name": "MyPhone", 
+    "category": "Phone",
+    "manufacturer": "HomeMade", 
+    "price": 1000 
 }
 
 ###
-GET  http://localhost:3000/devices/64377a84df2f7718869b0f6c
+GET  http://localhost:3000/devices/64377a63df2f7718869b0f6a
 Content-Type: application/json
 
 ###
-PUT  http://localhost:3000/devices/64377a84df2f7718869b0f6c
+PUT  http://localhost:3000/devices/643806a557a4fd1d72bd281c
+Content-Type: application/json
+
+{"name": "Pad"}
