@@ -1,0 +1,19 @@
+GET  http://localhost:3000/devices
+
+###
+POST http://localhost:3000/devices/
+Content-Type: application/json
+
+{  
+    "name": "iPadPro", 
+    "category": "Tablet",
+    "manufacturer": "Apple", 
+    "price": 900 
+}
+
+###
+GET  http://localhost:3000/devices/64377a84df2f7718869b0f6c
+Content-Type: application/json
+
+###
+PUT  http://localhost:3000/devices/64377a84df2f7718869b0f6c
